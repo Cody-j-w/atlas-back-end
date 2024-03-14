@@ -3,6 +3,7 @@
 """
 Module defining an API retrieval script
 """
+
 import csv
 import requests
 import sys
