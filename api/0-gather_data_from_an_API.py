@@ -24,8 +24,9 @@ if __name__ == '__main__':
         if todo['completed'] is True:
             completed += 1
 
-
-    print("Employee {0} is done with tasks({1}/{2})".format(employee['name'], completed, total))
+    print("Employee {0} is done with tasks({1}/{2})".format(
+        employee['name'], completed, total
+        ))
     for todo in todos:
         if todo['completed'] is True:
             print("\t {}".format(todo['title']))
