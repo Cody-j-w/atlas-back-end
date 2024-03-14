@@ -13,7 +13,7 @@ if __name__ == '__main__':
     base_url = 'https://jsonplaceholder.typicode.com/'
     user_ext = '/users/'
     todo_ext = '/todos'
- 
+
     employees_dict = {}
     employee_response = requests.get(base_url+user_ext)
     employees = employee_response.json()
@@ -32,4 +32,4 @@ if __name__ == '__main__':
         employees_dict.update(employee_json)
 
     with open('todo_all_employees.json', 'w') as file:
-            file.write(json.dumps(employees_dict))
+        file.write(json.dumps(employees_dict))
