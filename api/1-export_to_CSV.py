@@ -30,7 +30,7 @@ if __name__ == '__main__':
         count = 0
         for todo in todos:
             values = [employee['id'],
-                      employee['name'],
+                      employee['username'],
                       todo['completed'],
                       todo['title']]
             csv_file.writerow(values)
